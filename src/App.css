@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+table {
+    margin: auto;
+    width: 90% !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.theme-shed1 {
+    background: #339a990d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.head_1 {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: #168A86;
+    font-family: Poppins;
+    margin-bottom: 20px;
+}
+
+.table_cntn th,
+td,
+tr {
+    padding: 10px;
+    text-align: center !important;
+    border: 1px solid rgba(22, 138, 134, 0.4) !important;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    border-right: hidden;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #168A86;
+}
+
+th {
+    color: black !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px;
+}
+
+.scrolltoptnCnt {
+    position: fixed;
+    top: 90%;
+    z-index: 1;
+    right: 2%;
+}
+
+.btn_export {
+    font-family: inherit;
+    font-weight: 500;
+    padding: 4px 18px 7px 18px;
+    ;
+    color: white;
+    background: #009688;
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+}
+
+
+.clear_btn {
+    background: indianred !important;
+}
+
+.dates {
+    font-family: Fira Sans;
+    font-size: 14px;
+    padding: 0px 1px 0px 1px;
+}
+
+.page_end_text {
+    font-style: italic;
+    color: #168A86;
+}
+
+
+/* Loader  */
+
+#enNewLoader {
+    margin-top: 40vh;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    body{
+        width: fit-content !important;
+    }
+    .filter_cntn{
+        flex-flow: column !important;
+    }
+    .btn_export{
+        margin-top: 10px !important;
+    }
+    #export_Btn{
+        float: right;
+    }
+    table{
+        width: 100% !important;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
